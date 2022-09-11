@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "remove-allure-results": "rm -R -f ./allure-results",
+    "remove-allure-report": "rm -R -f ./allure-report",
     "GenereateAllureResultFolder": "npx playwright test --reporter=line,allure-playwright",
-    "GenereateAllureReportFolder": "npx allure generate ./allure-results --clean",
+    "GenereateAllureReportFolder": "npx allure generate ./allure-results",
     "OpenReport": "npx allure open ./allure-report",
     "testPlaywright": "npm run GenereateAllureResultFolder && GenereateAllureReportFolder && OpenReport"
   },
