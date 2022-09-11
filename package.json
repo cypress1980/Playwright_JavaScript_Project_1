@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "testCase": "npx playwright test --project=chromium",
     "removefolder": "rm -R -f ./allure-results && rm -R -f ./allure-report",
     "GenereateAllureResultFolder": "npx playwright test --reporter=line,allure-playwright",
     "GenereateAllureReportFolder": "npx allure generate ./allure-results --clean",
