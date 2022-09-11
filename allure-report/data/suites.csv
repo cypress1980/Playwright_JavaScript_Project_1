@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Sep 11 15:35:35 IST 2022","Sun Sep 11 15:35:39 IST 2022","4019","webkit","qaautomationlabs.spec.js","","","","Login into https://www.saucedemo.com/ and logout  ",""
-"passed","Sun Sep 11 15:35:35 IST 2022","Sun Sep 11 15:35:42 IST 2022","7029","firefox","qaautomationlabs.spec.js","","","","Login into https://www.saucedemo.com/ and logout  ",""
-"passed","Sun Sep 11 15:35:35 IST 2022","Sun Sep 11 15:35:39 IST 2022","3182","chromium","qaautomationlabs.spec.js","","","","Login into https://www.saucedemo.com/ and logout  ",""
+"passed","Sun Sep 11 15:40:41 IST 2022","Sun Sep 11 15:40:45 IST 2022","4137","webkit","qaautomationlabs.spec.js","","","","Login into www.saucedemo and logout  ",""
+"passed","Sun Sep 11 15:40:41 IST 2022","Sun Sep 11 15:40:45 IST 2022","3563","chromium","qaautomationlabs.spec.js","","","","Login into www.saucedemo and logout  ",""
+"passed","Sun Sep 11 15:40:41 IST 2022","Sun Sep 11 15:40:48 IST 2022","6839","firefox","qaautomationlabs.spec.js","","","","Login into www.saucedemo and logout  ",""
