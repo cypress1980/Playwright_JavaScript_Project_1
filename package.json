@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "smokeTest": "npx playwright test"
+    "GenereateAllureResultFolder": "npx playwright test --reporter=line,allure-playwright",
+    "GenereateAllureReportFolder": "npx allure generate ./allure-results --clean",
+    "OpenReport": "npx allure open ./allure-report",
+    "testPlaywright": "npm run GenereateAllureResultFolder && GenereateAllureReportFolder && OpenReport"
   },
   "keywords": [],
   "author": "",
