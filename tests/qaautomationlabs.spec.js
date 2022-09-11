@@ -19,7 +19,7 @@ test("Serach the Blog with text 'Playwright  ", async ({ page }) => {
   await search.type("Playwright");
   await searchIcon.click();
 });
-test.only("Login into www.saucedemo and logout  ", async ({ page }) => {
+test("Login into www.saucedemo and logout  ", async ({ page }) => {
   await page.goto("https://www.saucedemo.com/");
   const userName = page.locator("id=user-name");
   const password = page.locator("id=password");
