@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require("@playwright/test");
-test.describe("APi Teting", () => {
+test.describe("API Testing with Playwright", () => {
   const baseurl = "https://reqres.in/api";
 
   test("GET API Request with -- Valid 200 Response ", async ({ request }) => {
