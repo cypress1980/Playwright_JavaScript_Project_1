@@ -7,8 +7,37 @@ test.describe("API Testing with Playwright", () => {
     const response = await request.get(`${baseurl}/users/2`);
     expect(response.status()).toBe(200);
   });
+  test("POST API Request with -- Valid 201 Response ", async ({ request }) => {
+    const response = await request.post(`${baseurl}/users/2`, {
+      data: {
+        id: 123,
+      },
+    });
+    const responseBody = JSON.parse(await response.text());
+    expect(responseBody.id).toBe(123);
+    expect(response.status()).toBe(201);
+  });
 
-  test("GET API Request with - InValid 404 Respons ", async ({ request }) => {
+  test("PUT API Request with -- Valid 201 Response ", async ({ request }) => {
+    const response = await request.put(`${baseurl}/users/2`, {
+      data: {
+        id: 245,
+      },
+    });
+    const responseBody = JSON.parse(await response.text());
+    expect(responseBody.id).toBe(245);
+    expect(response.status()).toBe(200);
+  });
+
+  test("DELETE API Request with -- Valid 201 Response ", async ({
+    request,
+  }) => {
+    const response = await request.delete(`${baseurl}/users/2`, {});
+    expect(response.status()).toBe(204);
+  });
+  test("GET API Request with - InValid 404 Respons ", async ({
+    request,
+  }) => {
     const response = await request.get(`${baseurl}/usres/invalid-data`);
     expect(response.status()).toBe(404);
   });
