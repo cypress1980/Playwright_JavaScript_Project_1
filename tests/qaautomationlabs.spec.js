@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require("@playwright/test");
 
-test("Open the site 'qaautomationlabs.com 'and verify the title and Click on Menu Blogs", async ({
+test.skip("Open the site 'qaautomationlabs.com 'and verify the title and Click on Menu Blogs", async ({
   page,
 }) => {
   await page.goto("https://qaautomationlabs.com/");
@@ -10,7 +10,7 @@ test("Open the site 'qaautomationlabs.com 'and verify the title and Click on Men
   await blogs.last().click();
 });
 
-test("Search the Blog with text 'Playwright  ", async ({ page }) => {
+test.skip("Search the Blog with text 'Playwright  ", async ({ page }) => {
   await page.goto("https://qaautomationlabs.com/");
   const blogs = page.locator("//span[text()='Blogs']");
   const search = page.locator("id=wp-block-search__input-2");
